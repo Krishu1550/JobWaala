@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-3 bg-dark min-vh-100">
+      <div class="bg-dark p-2">
+        <a
+          href=""
+          class="d-flex text-decoration-none mt-1 align-items-center text-white"
+        >
+          <span class="fs-4 d-none d-sm-inline">JobPortal </span>
+        </a>
+
+        <ul class="nav nav-pills flex-column mt-4">
+          <li class="nav-item">
+            <a routerLink="userjoblist" class="nav-link text-white">
+              <span class="fs-4 d-none d-sm-inline">Enrolled Job</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a routerLink="newjobs" class="nav-link text-white">
+              <i class="fs-5 fa fa-guage"></i>
+              <span class="fs-4 d-none d-sm-inline">New Jobs</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="userprofile" class="nav-link text-white">
+              <span class="fs-4 d-none d-sm-inline">Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Organization</th>
+    </tr>
+  </thead>
+
+  <tbody *ngIf="humanResources">
+    <tr *ngFor="let item of humanResources">
+      <th scope="row">{{ item.hrId }}</th>
+      <td>{{ item.name }}</td>
+      <td>{{ item.organization }}</td>
+    </tr>
+  </tbody>
+</table>
